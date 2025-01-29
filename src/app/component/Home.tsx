@@ -33,7 +33,7 @@ const Home = () => {
           <div className='flex flex-col items-center md:items-start'>
             <h1 className='uppercase font-bold text-4xl mb-5 md:mb-2 text-center md:text-left'> 
                 Adinda's Digital <br/>
-                <span className='bg-gradient-to-r from-purple-400 to-blue-300 text-transparent bg-clip-text'>
+                <span className='bg-gradient-to-r from-purple-400 via-purple-300 to-blue-300 text-transparent bg-clip-text'>
                   {text}
                 </span>
                 <Cursor/>
