@@ -3,6 +3,7 @@ import { IoIosClose } from "react-icons/io";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
+import Button from './ui/Button';
 
 const Modal = () => {
     const [modal, setModal] = useState(false);
@@ -13,15 +14,12 @@ const Modal = () => {
 
     return (
     <section>
-        <button className='text-sm bg-gradient-to-r from-blue-900 to-purple-800 w-55 p-2.5 border rounded cursor-pointer'
-        onClick={() => setModal(!modal)}>
-            Know More About Me
-        </button>
+        <Button onClick={() => setModal(!modal)} description='Know more about me'/>
         {modal && (
                 <div className="fixed inset-0 flex items-center justify-center">
                     <div className="fixed inset-0 bg-black opacity-50"/>
                         <div className="modal-content bg-white p-7 rounded-md shadow-xl max-w-lg w-80 md:w-full m-auto relative">
-                            <h1 className='text-black text-xl font-bold mb-3'>
+                            <h1 className='bg-gradient-to-r from-blue-900 to-purple-200 text-transparent bg-clip-text text-xl font-bold mb-3'>
                                 Education
                             </h1>
                             <h2 className='text-black font-bold'>
@@ -36,7 +34,7 @@ const Modal = () => {
                             <p className='text-black text-sm mb-5'>
                                 Natural Science (2021 - 2023)
                             </p>
-                            <h1 className='text-black text-xl font-bold mb-3'>
+                            <h1 className='bg-gradient-to-r from-blue-900 to-purple-200 text-transparent bg-clip-text text-xl font-bold mb-3'>
                                 Interests
                             </h1>
                             <p className='text-black text-sm mb-7'>
@@ -46,7 +44,7 @@ const Modal = () => {
                                <li>Machine Learning</li>
                             </p>
                             <div className='flex gap-3 text-black'>
-                                <a href='https://www.github.com/adndax/' target='_blank'>
+                                <a href='https://www.github.com/adndax/' target='_blank' className=''>
                                     <FaGithub size='30'/>
                                 </a>
                                 <a href='https://www.linkedin.com/in/adindaptri/' target='_blank'>
