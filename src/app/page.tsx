@@ -1,4 +1,3 @@
-import Image from "next/image";
 import './globals.css';
 import Home from './component/Home';
 import NavBar from "./component/NavBar";

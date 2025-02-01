@@ -1,6 +1,5 @@
 import React from 'react'
 import { ThreeDCardDemo } from "./ui/3DCard";
-import Image from "next/image";
 import { projects } from "@data";
 
 const Projects = () => {
