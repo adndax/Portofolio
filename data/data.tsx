@@ -98,7 +98,7 @@ export const projects = [
         description: "A platform designed to provide efficient image retrieval and music data retrieval, enabling users to search and discover media based on different attributes.",
         jobs: "Full Stack Developer",
         imageSrc: "/simsalabim.png",
-        link: "https://github.com/nomisnoumi/tubesalgeo02",
+        link: "https://github.com/adndax",
         icons: [<FaGithub size={20} />, <FaReact size={20} />, <SiTypescript size={20} />, <IoLogoCss3 size={20} />, <FaPython size={20} />,]
       },
   ];
