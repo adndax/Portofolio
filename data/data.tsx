@@ -89,7 +89,7 @@ export const projects = [
         title: "OSKM ITB 2024: Official Website for ITB's New Student",
         jobs: "Front End Developer",
         description: "Developed the login form for the OSKM ITB 2024 website, enabling users to securely log in to access event-related information and resources.",
-        imageSrc: "/oskm.jpg",
+        imageSrc: "/oskmitb.jpg",
         link: "https://github.com/adndax",
         icons: [<FaGithub size={20} />, <FaReact size={20} />, <RiNextjsFill size={20} />, <SiTypescript size={20} />, <RiTailwindCssFill size={20} />]
       },
