@@ -6,6 +6,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import { activities } from "@data";
+import { useCallback } from 'react';
 
 type Testimonial = {
   quote: string;
@@ -36,9 +37,13 @@ export const AnimatedTestimonials = ({
 }) => {
   const [active, setActive] = useState(0);
 
-  const handleNext = () => {
+  const handleNext = useCallback(() => {
     setActive((prev) => (prev + 1) % testimonials.length);
-  };
+  }, [testimonials.length]);
+  
+  useEffect(() => {
+    handleNext();
+  }, [handleNext]); 
 
   const handlePrev = () => {
     setActive((prev) => (prev - 1 + testimonials.length) % testimonials.length);
@@ -47,10 +52,6 @@ export const AnimatedTestimonials = ({
   const isActive = (index: number) => {
     return index === active;
   };
-
-  useEffect(() => {
-    handleNext();
-  }, [handleNext]);
 
   useEffect(() => {
     if (autoplay) {

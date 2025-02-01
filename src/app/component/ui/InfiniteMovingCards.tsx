@@ -10,7 +10,7 @@ export const InfiniteMovingCards = ({
   className,
 }: {
   items: {
-    icon: JSX.Element;
+    icon: React.ReactNode;
     name: string;
   }[];
   direction?: "left" | "right";
