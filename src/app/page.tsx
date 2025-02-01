@@ -3,6 +3,9 @@ import './globals.css';
 import Home from './component/Home';
 import NavBar from "./component/NavBar";
 import Skills from "./component/Skills";
+import Projects from "./component/Projects";
+import Activities from "./component/Activities";
+import Contact  from "./component/Contact";
 
 const App = () => {
   return (
@@ -11,6 +14,9 @@ const App = () => {
         <NavBar/>
         <Home/>
         <Skills/>
+        <Projects/>
+        <Activities/>
+        <Contact/>
       </div>
     </>
   )
