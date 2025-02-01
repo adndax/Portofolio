@@ -1,4 +1,5 @@
 "use client";
+import { FaExternalLinkAlt } from "react-icons/fa";
 
 import { cn } from "@lib";
 import Image from "next/image";
@@ -9,6 +10,74 @@ import React, {
   useRef,
   useEffect,
 } from "react";
+
+// Define the interface for the props
+interface ThreeDCardDemoProps {
+  title: string;
+  jobs: string;
+  description: string;
+  imageSrc: string;
+  link: string;
+  icons: React.ReactNode[];
+}
+
+// Functional component accepting props
+export function ThreeDCardDemo({
+  title,
+  jobs,
+  description,
+  imageSrc,
+  link,
+  icons,
+}: ThreeDCardDemoProps) {
+  return (
+    <CardContainer className="inter-var">
+      <CardBody className="relative group/card hover:shadow-2xl hover:shadow-emerald-500/[0.1] bg-black border-white/[0.2] w-[20rem] sm:w-[25rem] h-full min-h-[480px] rounded-xl p-5 border flex flex-col">
+        {/* Title */}
+        <CardItem translateZ="50" className="text-xl font-bold text-white">
+          {title}
+        </CardItem>
+        
+        {/* Jobs (role) */}
+        <CardItem translateZ="60" className="text-neutral-200 text-sm mb-4">
+          {jobs}
+        </CardItem>
+        
+        {/* Description */}
+        <CardItem as="p" translateZ="70" className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300 mb-4">
+          {description}
+        </CardItem>
+
+        {/* Image */}
+        <CardItem translateZ="100" className="w-full mt-4 mb-4">
+          <Image
+            src={imageSrc}
+            height="800"
+            width="800"
+            className="h-48 w-full object-cover rounded-xl group-hover/card:shadow-xl"
+            alt="project-thumbnail"
+          />
+        </CardItem>
+
+        <div className="flex flex-row justify-between mt-auto">
+          <div className="flex flex-row gap-2">
+            {/* Displaying icons dynamically */}
+            {icons.map((icon, index) => (
+              <CardItem key={index} translateZ={20} className="flex items-center gap-2">
+                {icon}
+              </CardItem>
+            ))}
+          </div>
+
+          {/* Button */}
+          <CardItem translateZ={20} as="a" href={link} target="__blank" className="flex items-center gap-2">
+            <FaExternalLinkAlt size={20} />
+          </CardItem>
+        </div>
+      </CardBody>
+    </CardContainer>
+  );
+}
 
 const MouseEnterContext = createContext<
   [boolean, React.Dispatch<React.SetStateAction<boolean>>] | undefined
@@ -49,7 +118,7 @@ export const CardContainer = ({
     <MouseEnterContext.Provider value={[isMouseEntered, setIsMouseEntered]}>
       <div
         className={cn(
-          "py-20 flex items-center justify-center",
+          "py-2 sm:py-5 flex items-center justify-center",
           containerClassName
         )}
         style={{
