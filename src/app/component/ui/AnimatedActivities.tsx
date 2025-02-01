@@ -1,5 +1,6 @@
 "use client";
 
+import React from 'react';
 import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";

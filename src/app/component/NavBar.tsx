@@ -1,5 +1,6 @@
 'use client'
 
+import React from 'react';
 import { useRef, useEffect, useState } from 'react';
 import { useWindowScroll } from 'react-use';
 import { gsap } from 'gsap'

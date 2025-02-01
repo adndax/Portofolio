@@ -1,3 +1,4 @@
+import React from 'react';
 import './globals.css';
 import Home from './component/Home';
 import NavBar from "./component/NavBar";

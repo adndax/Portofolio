@@ -1,3 +1,4 @@
+import React from 'react';
 import { useState, useEffect } from 'react'
 import { IoIosClose } from "react-icons/io";
 import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
