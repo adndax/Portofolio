@@ -106,13 +106,6 @@ export const projects = [
 export const activities = [
     {
         quote:
-        "Designing and implementing an intuitive and responsive user interface for the OSKM ITB 2024 application, with a focus on enhancing user experience and optimizing the web application’s performance.",
-        name: "OSKM ITB 2024",
-        designation: "Front End Developer",
-        src: "/oskmitb.jpg",
-    },
-    {
-        quote:
         "Honored as a Beasiswa Unggulan awardee, receiving government-sponsored financial support for both tuition fees and living expenses in recognition of my contributions to society.",
         name: "Beasiswa Unggulan Masyarakat Berprestasi",
         designation: "2024 Awardee",
@@ -120,10 +113,10 @@ export const activities = [
     },
     {
         quote:
-        "Led the planning, execution, and management of technology-driven community service projects within the IEEE ITB Student Branch, ensuring successful delivery of initiatives in alignment with the branch’s mission and objectives.",
-        name: "IEEE ITB SB",
-        designation: "Project Officer",
-        src: "/ieeeitb.jpg",
+        "Designing and implementing an intuitive and responsive user interface for the OSKM ITB 2024 website, with a focus on enhancing user experience and optimizing the website’s performance.",
+        name: "OSKM ITB 2024",
+        designation: "Front End Developer",
+        src: "/oskmitb.jpg",
     },
     {
         quote:
@@ -134,7 +127,7 @@ export const activities = [
     },
     {
         quote:
-        "Engaged in the design and deployment of innovative technology solutions within the HMIF ITB organization, such as HMIF Super Apps.",
+        "Engaged in the design and deployment of innovative technology solutions within the HMIF ITB organization.",
         name: "HMIF ITB",
         designation: "Technology Development Staff",
         src: "/hmifitb.jpg",
