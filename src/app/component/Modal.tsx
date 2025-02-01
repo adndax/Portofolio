@@ -1,8 +1,6 @@
 import { useState, useEffect } from 'react'
 import { IoIosClose } from "react-icons/io";
-import { FaGithub } from "react-icons/fa";
-import { FaLinkedin } from "react-icons/fa";
-import { FaInstagram } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
 import Button from './ui/Button';
 
 const Modal = () => {
@@ -16,9 +14,9 @@ const Modal = () => {
     <section>
         <Button onClick={() => setModal(!modal)} description='Know more about me'/>
         {modal && (
-                <div className="fixed inset-0 flex items-center justify-center">
+                <div className="fixed inset-0 flex items-center justify-center z-50">
                     <div className="fixed inset-0 bg-black opacity-50"/>
-                        <div className="modal-content bg-white p-7 rounded-md shadow-xl max-w-lg w-80 md:w-full m-auto relative">
+                        <div className="modal-content bg-white p-7 rounded-md shadow-xl max-w-lg w-80 md:w-full m-auto relative z-50">
                             <h1 className='bg-gradient-to-r from-blue-900 to-purple-200 text-transparent bg-clip-text text-xl font-bold mb-3'>
                                 Education
                             </h1>
