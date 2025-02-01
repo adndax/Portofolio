@@ -102,3 +102,48 @@ export const projects = [
         icons: [<FaGithub size={20} />, <FaReact size={20} />, <SiTypescript size={20} />, <IoLogoCss3 size={20} />, <FaPython size={20} />,]
       },
   ];
+
+export const activities = [
+    {
+        quote:
+        "Designing and implementing an intuitive and responsive user interface for the OSKM ITB 2024 application, with a focus on enhancing user experience and optimizing the web application’s performance.",
+        name: "OSKM ITB 2024",
+        designation: "Front End Developer",
+        src: "/oskmitb.jpg",
+    },
+    {
+        quote:
+        "Honored as a Beasiswa Unggulan awardee, receiving government-sponsored financial support for both tuition fees and living expenses in recognition of my contributions to society.",
+        name: "Beasiswa Unggulan Masyarakat Berprestasi",
+        designation: "2024 Awardee",
+        src: "/unggulan.jpg",
+    },
+    {
+        quote:
+        "Led the planning, execution, and management of technology-driven community service projects within the IEEE ITB Student Branch, ensuring successful delivery of initiatives in alignment with the branch’s mission and objectives.",
+        name: "IEEE ITB SB",
+        designation: "Project Officer",
+        src: "/ieeeitb.jpg",
+    },
+    {
+        quote:
+        "Collaborated in organizing roadshows to various schools, effectively promoting ITB as a leading technology-focused university. Aimed to increase awareness and attract prospective students to the institution.",
+        name: "Bulan Bakti Ubala ITB",
+        designation: "Event",
+        src: "/bbuitb.jpg",
+    },
+    {
+        quote:
+        "Engaged in the design and deployment of innovative technology solutions within the HMIF ITB organization, such as HMIF Super Apps.",
+        name: "HMIF ITB",
+        designation: "Technology Development Staff",
+        src: "/hmifitb.jpg",
+    },
+    {
+        quote:
+        "Leading a team to raise awareness about the importance of computational thinking and the dangers of hoaxes, educating students on how to think critically and evaluate information effectively.",
+        name: "STEI-Kool (STEI-K Goes To School) 2023",
+        designation: "Head Trainer",
+        src: "/steikool.jpg",
+    },
+];
